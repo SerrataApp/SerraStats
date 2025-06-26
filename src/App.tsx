@@ -96,7 +96,7 @@ function App() {
   // Fonction pour grouper les statistiques par drapeau
   const getStatsByFlag = () => {
     const grouped = filteredStats.reduce((acc, stat) => {
-      const flagName = stat.data.drapeau || "Tous drapeaux";
+      const flagName = stat.data.drapeau || "Non renseigné";
       if (!acc[flagName]) {
         acc[flagName] = [];
       }
